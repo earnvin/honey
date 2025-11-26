@@ -16,7 +16,7 @@
   </head>
 
   <body>
-  <div id:"sectionhome">
+  <div id="sectionhome">
     <div class="bg-container container">
         <h1 class="head text-center">HONEY</h1>
 
@@ -35,7 +35,7 @@
         <div class="card2">
 
             <div class="d-flex flex-row justify-content-between">
-                <div onclick:"display('sectionabouther')">
+                <div onclick="display('sectionabouther')">
                     <img src="abouther.jpg" class="image"/>
                     <h1 class="subhead">about her</h1>
                 </div>
@@ -133,8 +133,22 @@ margin: 0;
         text-align: center;
     }
    </style>
+
+   <script>
+function display(sectionId) {
+    document.getElementById('sectionhome').style.display = 'none';
+    document.getElementById('sectionabouther').style.display = 'none';
+    document.getElementById(sectionId).style.display = 'block';
+}
+window.onload = function() {
+    document.getElementById('sectionhome').style.display = 'block';
+    document.getElementById('sectionabouther').style.display = 'none';
+}
+</script>
+
   </body>
 </html>
+
 
 
 
