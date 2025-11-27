@@ -178,21 +178,26 @@ margin: 0;
          color:#808080;
      
    </style>
-
-   <script>
+<script>
 function display(sectionId) {
-    document.getElementById('sectionhome').style.display = 'none';
-    document.getElementById('sectionabouther').style.display = 'none';
+    const sections = ['sectionhome', 'sectionabouther', 'sectionbest', 'sectiongame', 'sectionlove'];
+    sections.forEach(id => document.getElementById(id).style.display = 'none');
     document.getElementById(sectionId).style.display = 'block';
 }
+
 window.onload = function() {
     document.getElementById('sectionhome').style.display = 'block';
-    document.getElementById('sectionabouther').style.display = 'none';
+    const sections = ['sectionabouther', 'sectionbest', 'sectiongame', 'sectionlove'];
+    sections.forEach(id => document.getElementById(id).style.display = 'none');
 }
 </script>
 
+
+
+
   </body>
 </html>
+
 
 
 
