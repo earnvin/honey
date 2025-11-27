@@ -70,7 +70,7 @@
             <p> Note-matter em led ani chatgpt lo nundi copy paste chesina </p>
         </div>
        </div>
-
+<button class="btn btn-warning" onclick="display('sectionhome')">Back</button>
    </div>
    </div>
     <div id="sectionbest">
@@ -84,7 +84,7 @@
             <p> The Decent Boy Vinay</p>
         </div>
        </div>
-
+<button class="btn btn-secondary" onclick="display('sectionhome')">Back</button>
    </div>
    </div>
    
@@ -98,7 +98,7 @@
             <p> Pro player laga feel avuthadi kani noob player ey..... </p>
         </div>
        </div>
-
+<button class="btn btn-dark" onclick="display('sectionhome')">Back</button>
    </div>
    </div>
     <div id="sectionlove">
@@ -111,7 +111,7 @@
             <p> Love led Thokka led dani evvar love chesthar </p>
         </div>
        </div>
-
+     <button class="btn btn-primary" onclick="display('sectionhome')">Back</button>
    </div>
    </div>
 
@@ -158,7 +158,7 @@
     }
     .bg {
 margin: 0;
-            padding: 0;
+            padding: 20px;
             height: 100vh;
             width: 100vw;
             background-image: url('bgimage.jpg'); /* Replace with your image */
@@ -183,7 +183,14 @@ function display(sectionId) {
     const sections = ['sectionhome', 'sectionabouther', 'sectionbest', 'sectiongame', 'sectionlove'];
     sections.forEach(id => document.getElementById(id).style.display = 'none');
     document.getElementById(sectionId).style.display = 'block';
+   
 }
+ function goHome() {
+    const sections = ['sectionhome', 'sectionabouther', 'sectionbest', 'sectiongame', 'sectionlove'];
+    sections.forEach(id => document.getElementById(id).style.display = 'none');
+    document.getElementById('sectionhome').style.display = 'block';
+}
+
 
 window.onload = function() {
     document.getElementById('sectionhome').style.display = 'block';
@@ -197,6 +204,7 @@ window.onload = function() {
 
   </body>
 </html>
+
 
 
 
