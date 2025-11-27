@@ -24,7 +24,7 @@
             <img src="headimg.jpg" class="img-fluid rounded-4 shadow-sm mb-2"/>
 
             <div>
-                <p>Name : Honey</p>
+                <p class="mainheading">Name : Honey</p>
                 <p>Real Name : Mythri</p>
                 <p>DOB : Emo</p>
                 <p>Address : telavad</p>
@@ -39,17 +39,17 @@
                     <img src="abouther.jpg" class="image"/>
                     <h1 class="subhead">about her</h1>
                 </div>
-                <div>
+                <div onclick="display('sectionbest')">
                     <img src="aboutbestfriend.jpg" class="image"/>
                     <h1 class="subhead">Bestfriend</h1>
                 </div>
             </div>
             <div class="d-flex flex-row justify-content-between" class="image">
-                <div>
+                <div onclick="display('sectiongame')">
                     <img src="game.jpg" class="image"/>
                     <h1 class="subhead">Game</h1>
                 </div>
-                <div>
+                <div onclick="display('sectionlove')">
                     <img src="aboutlove.jpg" class="image"/>
                     <h1 class="subhead">Love</h1>
                 </div>
@@ -73,11 +73,51 @@
 
    </div>
    </div>
+    <div id="sectionbest">
+   <div class="bg">
+    <div class="card d-flex flex-column justify-content-center ">
+        <img src="headimg.jpg"/>
 
+        <div>
+            <h1>Honey bestfriend Vinay</h1>
+            <p>Honey might be unpredictable chaos, but her best friend Vinay is the calm the universe accidentally balanced her life with. He’s a decent boy with a gentleman mindset, the kind who talks less and proves more. Vinay carries elevation not in his voice, but in his character—solid morals, respectful words, and a chilled attitude that never needs validation. While the world is busy flexing filters, Vinay flexes manners, loyalty, and intelligence. He’s the guy every parent would sign an approval form for—no extra drama, no fake show, just genuine heart and balanced brain. His presence says good vibes only, his actions scream trustworthy king behavior, and his silence sometimes drops heavier motivation than motivational speakers themselves. Vinay is not just a best friend, he’s the standard definition of “decent boy”, an elevation icon with zero cringe, 100% real. 👑✅</p>
+            <p> The Decent Boy Vinay</p>
+        </div>
+       </div>
+
+   </div>
+   </div>
    
+ <div id="sectiongame">
+   <div class="bg">
+    <div class="card d-flex flex-column justify-content-center ">
+        <img src="headimg.jpg"/>
+
+        <div>
+            <p>Honey plays Garena Free Fire like she’s doing a treasure hunt, not a battle royale. Girl loots for 20 minutes just to donate the items to the enemy squad in 2 seconds flat. Her aim is so artistic even bullets refuse to go where she points—abstract gameplay, Picasso would be proud. She pushes rank harder than exams but survives shorter than a sneeze in a dusty room. Honey uses grenades like festivity fireworks—beautiful throw, zero damage. The only headshots she gets are the ones she receives. Teammates revive her more times than their phone battery charges in a day. Enemies show more loyalty by finishing her quickly than squad members do by covering her. Honey’s Free Fire gameplay has only one rule: drop in hot, return to lobby faster. Even the matchmaking timer takes longer than her survival time, legend status in reverse. 🔥💀</p>
+            <p> Pro player laga feel avuthadi kani noob player ey..... </p>
+        </div>
+       </div>
+
+   </div>
+   </div>
+    <div id="sectionlove">
+   <div class="bg">
+    <div class="card d-flex flex-column justify-content-center ">
+        <img src="headimg.jpg"/>
+
+        <div>
+            <p>Honey always believed love was like squad matches—unpredictable, sometimes scary, but worth the thrill. Unlike the loud chaos of her Garena Free Fire battles, her heart was a quiet safe zone, untouched territory waiting for the right player to land. Every night, while scrolling through endless reels on Instagram, her feed showed love quotes more than relationship tags—subtle sign that her Duo mode was still unlocked for a worthy partner. Then came Vinay, a decent boy whose friendship felt like armor protection and whose presence warmed her more than booyah victories ever could. She never had to announce her status; the universe kept it elegant—no couple DP, no matching bios, just a heart with Wi-Fi fully connected and notifications still open for love. Their story wasn’t born from flirty spark, but from genuine trust and silent respect, the kind that grows slowly like honey dripping, not spilling. She smiles differently now—less like a cosmetic reaction, more like a true buff effect. And maybe, just maybe, the game of love is about to finally start for her. 🍯❤️</p>
+            <p> Love led Thokka led dani evvar love chesthar </p>
+        </div>
+       </div>
+
+   </div>
+   </div>
 
    <style>
     .card {
+        margin-top:10px;
         max-width: 400px;
         margin: 0 auto;
         padding: 20px;
@@ -132,6 +172,11 @@ margin: 0;
         font-size: 15px;
         text-align: center;
     }
+    .mainheading {
+        font-size:30px;
+         font-family:bree serif;
+         color:#808080;
+     
    </style>
 
    <script>
@@ -148,6 +193,7 @@ window.onload = function() {
 
   </body>
 </html>
+
 
 
 
